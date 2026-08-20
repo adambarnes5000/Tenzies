@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background-color: #0b2434;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div#root {
+  height: 100%;
+  width: 100%;
+  max-height: 400px;
+  max-width: 400px;
+}
+
+main {
+  background-color: #f5f5f5;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+}
+
+.dice-container button {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  border: none;
+  font-family: Inter, sans-serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pressed {
+  background-color: lightgreen;
+}
+
+.notPressed {
+  background-color: white;
+}
+
+div.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+
+div.header h1 {
+  margin: 0;
+}
+
+.instructions {
+  width: 350px;
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 100%;
+  letter-spacing: -3%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.rollDiv {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rollButton {
+  width: 30%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #5035ff;
+  color: white;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.playAgainButton {
+  width: 80%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: darkred;
+  color: white;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 2rem;
+}
